@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 
 namespace ExamenIntra
 {
@@ -6,7 +7,16 @@ namespace ExamenIntra
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            /// Partie LINQ
+            PartieLINQ.Start();
+            Console.ReadKey();
+                                       
+            /// Partie concurrente
+            PartieConcurrente.Start();
+            
+            /// Partie asynchrone
+            PartieAsynchrone.Start();
         }
+    
     }
 }
