@@ -47,8 +47,12 @@ namespace ExamenIntra.partieConcurrente
         {
             for (int i = 0; i < 1000; i++)
             {
+                if ((i % 100) == 0)
+                {
+                    Console.WriteLine(syracuse.Iteration);
+                } 
                 syracuse.Next();
-                Thread.Sleep(10);
+                //Thread.Sleep(10);
             }
         }
     }

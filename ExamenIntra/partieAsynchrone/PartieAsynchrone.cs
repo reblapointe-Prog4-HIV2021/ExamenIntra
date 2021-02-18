@@ -26,7 +26,7 @@ namespace ExamenIntra.partieAsynchrone
         async Task Multimedia()
         {
             Console.WriteLine("C. Commander des ressource multimédia.");
-            await Task.Delay(50);
+            await Task.Delay(5000);
             Console.WriteLine("D. Recevoir des ressources multimédia.");
         }
 
@@ -34,7 +34,7 @@ namespace ExamenIntra.partieAsynchrone
         {
             Console.WriteLine("E. Début du développement Front End.");
             Task recevoirMultimedia = Multimedia();
-            await Task.Delay(10);
+            await Task.Delay(1000);
             await recevoirMultimedia;
             Console.WriteLine("F. Fin du développement Front End.");
 
@@ -43,7 +43,7 @@ namespace ExamenIntra.partieAsynchrone
         async Task BackEnd()
         {
             Console.WriteLine("G. Début du développement Back End.");
-            await Task.Delay(20);
+            await Task.Delay(2000);
             Console.WriteLine("H. Fin du développement Back End.");
 
         }
@@ -51,7 +51,7 @@ namespace ExamenIntra.partieAsynchrone
         async Task Deploiement()
         {
             Console.WriteLine("I. Début du déploiement.");
-            await Task.Delay(10);
+            await Task.Delay(1000);
             Console.WriteLine("J. Fin du déploiement.");
         }
     }
