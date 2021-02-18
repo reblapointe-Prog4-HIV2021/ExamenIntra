@@ -8,14 +8,14 @@ namespace ExamenIntra
         static void Main(string[] args)
         {
             /// Partie LINQ
-            PartieLINQ.Start();
+            partieLinq.PartieLINQ.Start();
             Console.ReadKey();
                                        
             /// Partie concurrente
-            PartieConcurrente.Start();
-            
+            partieConcurrente.PartieConcurrente.Start();
+
             /// Partie asynchrone
-            PartieAsynchrone.Start();
+            partieAsynchrone.PartieAsynchrone.Start();
         }
     
     }
